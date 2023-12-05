@@ -1,0 +1,68 @@
+sudo apt update | Update software.
+sudo apt install net-tools | Installeert netwerktools.
+ifconfig | Informatie over netwerkverbinding.
+netstat -na | welke netwerkverbindingen actief zijn.
+sudo apt reinstall net-tools | Netwerktools reinstalleren.
+sudo apt purge net-tools | Verwijdert de net-tools.
+sudo apt upgrade | Software updaten.
+sudo apt clean | Onnodige downloadbestanden verwijderen.
+sudo apt autoremove net-tools | Verwijdert ongebruikte software na het verwijderen van net-tools.
+sudo apt-cache show ^net-tools$ | Toont details over de netwerktools.
+sudo dpkg -i steam_latest.deb | Installeert Steam Pakket.
+sudo dpkg -l "net*" | Geïnstalleerde pakketten die met "net" beginnen.
+sudo dpkg -s screen | Informatie over geïnstalleerde screen pakket.
+ls | Bestanden en mappen lijst.
+ls -a | Bestanden en mappen lijst "All".
+ls -l | Bestanden en mappen lijst "Meer informatie"
+ls -h | Bestanden en mappen lijst "Human readable".
+ls -al | Combineert "All" en "Meer informatie".
+ls -alh | Combineert "All", "Meer informatie" en "Human readable".
+mkdir Projecten | Maakt een map.
+cd Projecten | Gaat naar de map.
+mkdir Onnodig | Maakt een map.
+rmdir Onnodig | Verwijdert een map.
+cd / | Gaat naar de hoofdmap.
+cd /home | Gaat naar de map.
+cd ~ | Gaat terug naar home.
+cd .. | Gaat een map omhoog.
+cd - | Gaat naar vorige map.
+pwd | Waar je bent.
+ls -al | Combineert "All" en "Meer informatie".
+mkdir Scripts | Maakt een map.
+cd Scripts | Gaat naar de map.
+touch bash.sh | Maakt een leeg bestand.
+nano bash.sh | Opent Nano.
+cp bash.sh bash.sh.backup | Kopieert "bash.sh" naar "bash.sh.backup".
+mv bash.sh.backup bash.sh.backup.yesterday | Veranderd de naam.
+rm -f bash.sh.backup.yesterday | Verwijdert een map zonder bevestiging.
+chmod +x bash | Geeft toestemming.
+touch README | Maakt een leeg bestand.
+echo "Mijn readme document" > README | Voegt een regel aan.
+cat README | Inhoud van de bestand.
+echo "Regel 2" >> README | Voegt een regel aan.
+nano README | Opent Nano.
+tail -f /var/log/syslog | System log.
+grep "readme" README | Zoekt naar het woord "readme" in "README".
+echo "Eerste Regel" > README | Overschrijft een bestand met een nieuwe regel.
+less /var/log/syslog | Minder system log.
+more /var/log/syslog | More system log.
+sudo useradd -m -s /bin/bash johndoe | Maakt een nieuwe gebruiker.
+sudo userdel -r johndoe | Verwijdert een gebruiker.
+sudo groupadd developers | Maakt een nieuwe groep.
+tail /etc/group | Inhoud van een bestand.
+sudo usermod -aG developers johndoe | Voegt de gebruiker aan een groep.
+sudo groupdel -f developers | Verwijdert een groep.
+cat /etc/passwd | Inhoud van een bestand.
+date | Huidige datum en tijd.
+timedatectl status | Informatie over de systeemdatum.
+sudo timedatectl | Samenvatting van de huidige systeemdatum.
+timedatectl | Huidige systeemdatum.
+find /etc/passwd -name "passwd" | Zoekt naar bestanden met de naam "passwd" in de "/etc" map.
+find / -name "pas*" | Zoekt naar bestanden die met namen "pas" beginnen.
+find /etc -size +1024 | Zoekt naar bestanden in de map die groter dan 1024 kb zijn.
+find / -perm 777 | Zoekt naar bestanden in de map met toestemmingen 777.
+grep /etc "*.conf" | Zoekt naar regels met "/etc" in bestanden met de extensie ".conf".
+ps aux | Informatie over processen.
+ps uax | more | Informatie over processen "more".
+ps fax | Informatie over processen.
+pkill -KILL bash | Maakt alle processen met de naam "bash" dicht.
