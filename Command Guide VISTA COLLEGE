@@ -2,7 +2,7 @@ sudo apt update | Update software.
 sudo apt install net-tools | Installeert netwerktools.
 ifconfig | Informatie over netwerkverbinding.
 netstat -na | welke netwerkverbindingen actief zijn.
-sudo apt reinstall net-tools | Netwerktools reinstalleren.
+sudo apt reinstall net-tools | Netwerktools opnieuw installeren.
 sudo apt purge net-tools | Verwijdert de net-tools.
 sudo apt upgrade | Software updaten.
 sudo apt clean | Onnodige downloadbestanden verwijderen.
